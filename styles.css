@@ -4,7 +4,6 @@ body {
 
 .main-container {
   max-width: 800px;
-  height: 100%;
   margin: 0 auto;
   border: 1px solid black;
 }
@@ -57,7 +56,7 @@ main {
   grid-row: 1;
   background-color: black;
   width: 10px;
-  height: 1770px;
+  height: 1731px;
   margin-left: 27.7%;
 }
 
@@ -124,6 +123,15 @@ main {
   padding-top: 10px;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .card-wrapper:nth-child(odd)::before {
   content: "";
   position: absolute;
@@ -148,6 +156,13 @@ main {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/770px-Pok%C3%A9_Ball_icon.svg.png");
   background-size: contain;
   transform: rotate(-20deg);
+}
+
+.card-wrapper:hover:before {
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .left::before {
