@@ -47,7 +47,7 @@ main {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 0% 1fr;
+  grid-template-columns: 1fr 10px 1fr;
   grid-template-rows: repeat(6, 200px);
 }
 
@@ -56,7 +56,7 @@ main {
   grid-row: 1;
   background-color: black;
   width: 10px;
-  height: 1731px;
+  height: 1750px;
   margin-left: 27.7%;
 }
 
@@ -64,6 +64,10 @@ main {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.card-wrapper:nth-child(odd){
+  padding-left:20px
 }
 
 .card-wrapper:nth-child(2) {
@@ -110,7 +114,7 @@ main {
 .card-wrapper:nth-child(10) {
   grid-column: 1;
   grid-row: 9;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 
 .card-text {
