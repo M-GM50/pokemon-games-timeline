@@ -66,6 +66,10 @@ main {
   margin-right: auto;
 }
 
+.card-wrapper:nth-child(odd) {
+  padding-left: 20px;
+}
+
 .card-wrapper:nth-child(2) {
   grid-column: 1;
   grid-row: 1;
@@ -222,5 +226,6 @@ footer {
 
   .timeline {
     margin-left: 50%;
+    height: 1760px;
   }
 }
